@@ -5,25 +5,11 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>External_Object_Service__mdt</members>
-        <members>Object_Field_Mapping__mdt</members>
+        <members>Salesforce_Connect_Field_Mapping__mdt</members>
+        <members>Salesforce_Connect_Object_Mapping__mdt</members>
+        <members>Salesforce_Connect_Service_Setting__mdt</members>
+        <members>Salesforce_Connect_Settings__c</members>
         <name>CustomObject</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
     </types>
     <version>37.0</version>
 </Package>

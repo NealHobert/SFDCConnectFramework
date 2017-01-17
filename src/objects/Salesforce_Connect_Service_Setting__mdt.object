@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Detail_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Enter the Endpoint url path to retrieve a single external record. This value will be added to the Base_Endpoint__c to construct the final http endpoint value.</inlineHelpText>
+        <label>Detail Endpoint</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key_Field_Separator__c</fullName>
+        <defaultValue>&quot;.&quot;</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Key Field Separator</label>
+        <length>2</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key_Fields__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Enter the API Field Names that will be used to create a Unique Key</inlineHelpText>
+        <label>Key Fields</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>List_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Enter the Endpoint url path to retrieve a list of external records. This value will be added to the Base_Endpoint__c to construct the final http endpoint value.</inlineHelpText>
+        <label>List Endpoint</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mapper_Class__c</fullName>
+        <defaultValue>&quot;SalesforceConnectGenericMapper&quot;</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Mapper Class</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Fields__c</fullName>
+        <description>Enter the API Field Names that will be used to generate the endpoint</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Parameter Fields</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Class__c</fullName>
+        <defaultValue>&quot;SalesforceConnectGenericService&quot;</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Service Class</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Salesforce Connect Service Setting</label>
+    <pluralLabel>Salesforce Connect Service Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
