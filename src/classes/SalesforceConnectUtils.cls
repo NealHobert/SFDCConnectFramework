@@ -129,7 +129,6 @@ public class SalesforceConnectUtils {
 				} else if (metaInfo.Conversion_Type__c == CURRENCY_CONVERSION){
 					dataRow.put(fieldName, getDisplayCurrencyValue(dataRow.get(fieldName),metaInfo));
 				}
-				
 			}	
 		}
 	}
@@ -149,22 +148,6 @@ public class SalesforceConnectUtils {
 				convertedValue = Double.valueOf(value) / Integer.valueOf(conversionFactor);
         	}
         
-
-        //if (rate.Implied_Decimal_Places__c == 0){
-        //	convertedValue = Double.valueOf(value);
-        //} 
-        //else if (rate.Implied_Decimal_Places__c == 1){
-        //    convertedValue = Double.valueOf(value) / 10;
-        //}
-        //else if (rate.Implied_Decimal_Places__c == 2){
-        //    convertedValue = Double.valueOf(value) / 100;
-        //}
-        //else if (rate.Implied_Decimal_Places__c == 3){
-        //    convertedValue = Double.valueOf(value) / 1000;
-        //} else {
-        //	SalesforceConnectDataSourceUtils dsUtils= new SalesforceConnectDataSourceUtils();
-        //   	dsUtils.throwException('Cannot convert to more than 3 decimal places');
-        //}
         return convertedValue;
     }
 
@@ -181,23 +164,6 @@ public class SalesforceConnectUtils {
 			convertedValue = Integer.valueOf(Double.valueOf(value) * Integer.valueOf(conversionFactor));
         }
         
-        //if (rate.Implied_Decimal_Places__c == 0){
-        //    convertedValue = Integer.valueOf(value);
-        //} 
-        //else if (rate.Implied_Decimal_Places__c == 1){
-
-        //    convertedValue = Integer.valueOf(Double.valueOf(value) * 10);
-        //}
-        //else if (rate.Implied_Decimal_Places__c == 2){
-        //    convertedValue = Integer.valueOf(Double.valueOf(value) * 100);
-        //}
-        //else if (rate.Implied_Decimal_Places__c == 3){
-        //    convertedValue = Integer.valueOf(Double.valueOf(value) * 1000);
-        //} else {
-        //	SalesforceConnectDataSourceUtils dsUtils= new SalesforceConnectDataSourceUtils();
-        //   	dsUtils.throwException('Cannot convert to more than 3 decimal places');
-        //}
-        System.debug('convertedValue:' + convertedValue);
         return convertedValue;
     }
 

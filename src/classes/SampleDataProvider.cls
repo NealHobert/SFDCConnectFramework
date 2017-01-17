@@ -27,37 +27,29 @@
 public class SampleDataProvider extends DataSource.Provider {
 		
 	public override DataSource.Connection getConnection(DataSource.ConnectionParams connectionParams){
-        //LogUtils.logInfo('CommunicationVerticalDataProvider.getConnection entry', connectionParams);
         
         SampleDataConnection extCon = new SampleDataConnection();
 
-        //LogUtils.logInfo('CommunicationVerticalDataProvider.getConnection exit', extCon);
-        //return extCon;
-        return null;
+        return extCon;
     }
     
     public override List<DataSource.AuthenticationCapability> getAuthenticationCapabilities(){
-        //LogUtils.logInfo('CommunicationVerticalDataProvider.getAuthenticationCapabilities', 'entry');
-        
+
         List<DataSource.AuthenticationCapability> capabilities = new List<DataSource.AuthenticationCapability>();
         capabilities.add(DataSource.AuthenticationCapability.ANONYMOUS);
 
-        //LogUtils.logInfo('CommunicationVerticalDataProvider.getAuthenticationCapabilities exit', capabilities);
         return capabilities;
     }
     
     public override List<DataSource.Capability> getCapabilities(){
-        //LogUtils.logInfo('CommunicationVerticalDataProvider.getCapabilities', 'entry');
 
         List<DataSource.Capability> capabilities = new List<DataSource.Capability>();
         capabilities.add(DataSource.Capability.ROW_QUERY);
         capabilities.add(DataSource.Capability.ROW_CREATE);
         capabilities.add(DataSource.Capability.ROW_UPDATE);
         capabilities.add(DataSource.Capability.ROW_DELETE);
-        
         capabilities.add(DataSource.Capability.SEARCH);
         
-        //LogUtils.logInfo('CommunicationVerticalDataProvider.getCapabilities exit', capabilities);        
         return capabilities;
     }
 

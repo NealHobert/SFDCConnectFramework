@@ -73,7 +73,6 @@ public class SampleDataConnection extends DataSource.Connection {
             Salesforce_Connect_Service_Setting__mdt setting = [SELECT MasterLabel, Service_Class__c FROM Salesforce_Connect_Service_Setting__mdt WHERE MasterLabel = :tableName LIMIT 1];
             service = (SalesforceConnectService) Type.forName(setting.Service_Class__c).newInstance();
         } catch(Exception e){
-            
             throw new DataSource.DataSourceException(e);
         }
                 
