@@ -44,7 +44,7 @@ public with sharing class SampleSalesforceConnectService implements SalesforceCo
         // 
         //HttpResponse response = SalesforceConnectConnectionHelper.sendRequest(String jsonString, String method, String endpoint, Integer startRecord, Integer blockSize)
 
-        //TODO: Deserialize jsonBody int rows
+        //TODO: Deserialize jsonBody into rows
 		DataSource.TableResult result;
 		result = DataSource.TableResult.get(context, rows);
 		
